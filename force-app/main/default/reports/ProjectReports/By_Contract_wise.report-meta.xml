@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Expense__c.Ammount__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Amount</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_43666158</developerName>
+        <masterLabel>Contract name by</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Expense__c$Contracts__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>Expense__c$Name</field>
+    </columns>
+    <columns>
+        <field>Expense__c$Ammount__c</field>
+    </columns>
+    <columns>
+        <field>Expense__c$Contacts__c</field>
+    </columns>
+    <columns>
+        <field>Expense__c$Category__c</field>
+    </columns>
+    <currency>INR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Expense__c$Project__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Test Company</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_43666158</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>By Contract wise</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Expenses_report_type__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Expense__c$Date_of_Expense__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

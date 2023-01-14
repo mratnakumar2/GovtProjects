@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Common_Acc_Expenses</fullName>
+    <columns>NAME</columns>
+    <columns>Ammount__c</columns>
+    <columns>Project__c</columns>
+    <columns>Contracts__c</columns>
+    <columns>Date_of_Expense__c</columns>
+    <columns>Description__c</columns>
+    <columns>Contacts__c</columns>
+    <columns>Category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Project__c</field>
+        <operation>equals</operation>
+        <value>Common Account (Scv+RBK)</value>
+    </filters>
+    <label>Common Acc Expenses</label>
+</ListView>
